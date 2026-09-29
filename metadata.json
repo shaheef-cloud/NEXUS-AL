@@ -1,0 +1,6 @@
+{
+  "name": "NEXUS AI — Student Learning & Productivity Platform",
+  "description": "Professional student learning platform featuring an AI tutor, knowledge vault, AI quiz generator, mission planner, and progress analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-bg-deep: #382c0b;
+    --gold-bg-main: #4a3b10;
+    --gold-card: #574513;
+    --gold-card-hover: #665217;
+    --gold-card-alt: #46370f;
+    --gold-border: rgba(212, 175, 55, 0.4);
+    --gold-accent: #d4af37;
+    --gold-light: #f59e0b;
+
+    --silver-text-bright: #f8fafc;
+    --silver-text-main: #e2e8f0;
+    --silver-text-muted: #94a3b8;
+    --silver-border: rgba(226, 232, 240, 0.28);
+    --silver-border-hover: rgba(226, 232, 240, 0.55);
+
+    --success-green: #10b981;
+    --success-green-bg: rgba(16, 185, 129, 0.15);
+    --success-green-border: rgba(16, 185, 129, 0.4);
+
+    --error-red: #ef4444;
+    --error-red-bg: rgba(239, 68, 68, 0.15);
+    --error-red-border: rgba(239, 68, 68, 0.4);
+  }
+
+  body {
+    background-color: var(--gold-bg-main);
+    color: var(--silver-text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbars with gold/silver accents */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #382c0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #665217;
+  border-radius: 4px;
+  border: 1px solid rgba(226, 232, 240, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7d641d;
+}
+
+/* Code block formatting */
+pre {
+  background-color: #2b2207 !important;
+  color: #f1f5f9 !important;
+  border: 1px solid rgba(226, 232, 240, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
